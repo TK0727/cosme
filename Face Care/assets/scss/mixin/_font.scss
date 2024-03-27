@@ -1,0 +1,47 @@
+/* -------------------------------------------- */
+/* ----------------- Zen Old Mincho------------ */
+/* -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=M+PLUS+1:wght@100..900&family=Zen+Kaku+Gothic+Antique:wght@500&family=Zen+Old+Mincho:wght@500&display=swap');
+// medium
+@mixin zen-old-mincho-m{
+    font-family: 'zen-old-mincho', serif;
+    font-weight: 500;
+}
+
+
+
+/* -------------------------------------------- */
+/* ------------- Cormorant Garamond------------ */
+/* -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=M+PLUS+1:wght@100..900&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+// Regular
+
+@mixin cormorant-garamond-r{
+    font-family: 'Cormorant-Garamond', serif;
+    font-weight: 400;
+}
+
+// SemiBold
+@mixin cormorant-garamond-sb{
+    font-family: 'Cormorant-Garamond', serif;
+    font-weight: 600;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* ---------------- Noto Sans JP -------------- */
+/* -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap');
+
+// Regular
+@mixin noto-sans-jp-r{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+// medium
+@mixin noto-sans-jp-m{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}

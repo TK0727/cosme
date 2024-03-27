@@ -1,0 +1,14 @@
+@mixin container($width: $container1) {
+  max-width: $width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin padding {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+@mixin padding2 {
+  padding-right: 10%;
+  padding-left: 10%;
+}

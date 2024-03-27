@@ -1,0 +1,62 @@
+header{
+    height: 140px;
+    @include padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include sp($break2) {
+      height: 80px;
+    }
+
+.logo{
+
+    .link{
+        display: block;
+        height: 70px;
+        & img{
+            width: auto;
+            height: 100%;
+        }
+
+        @include sp($break2) {
+          height: 50px;
+        }
+        
+    }
+}
+   
+    .contact{
+        display: block;
+        width: 200px;
+        height: 60px;
+        background: $pink3;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include sp($break2) {
+          width: 140px;
+          height: 40px;
+          top: 22px;
+          right: 30px;
+        }
+        & a{
+            color: #fff;
+            font-size: 20px;
+            @include zen-old-mincho-m;
+            @include sp($break2) {
+                font-size: 14px;
+            }
+            
+        }
+
+    }
+}

@@ -1,0 +1,248 @@
+/* ----- break point ----- */
+
+$retina: 1500px;
+$break1: 1250px;
+$break2: 600px;
+$break3: 400px;
+$article_break: 767px;
+
+
+
+/* ----- container width ----- */
+
+$container1: 1200px;
+$container2: 1050px; 
+
+
+
+/* ----- margin-top/bottom ----- */
+
+
+
+@mixin mt-sec {
+  margin-top: 160px;
+
+  @include sp($break1) {
+    margin-top: 120px;
+  }
+
+  @include sp($break2) {
+    margin-top: 100px;
+  }
+}
+
+@mixin mt-contents {
+  margin-top: 80px;
+
+  @include sp($break1) {
+    margin-top: 60px;
+  }
+
+  @include sp($break2) {
+    margin-top: 50px;
+  }
+}
+
+@mixin mt-msg {
+  margin-top: 50px;
+
+  @include sp($break1) {
+    margin-top: 40px;
+  }
+
+  @include sp($break2) {
+    margin-top: 30px;
+  }
+}
+
+@mixin mt-link1 {
+  margin-top: 50px;
+
+  @include sp($break1) {
+    margin-top: 30px;
+  }
+
+  @include sp($break2) {
+    margin-top: 20px;
+  }
+}
+
+@mixin mt-link2 {
+  margin-top: 100px;
+
+  @include sp($break1) {
+    margin-top: 80px;
+  }
+
+  @include sp($break2) {
+    margin-top: 60px;
+  }
+}
+
+
+
+@mixin mb-sec {
+  margin-bottom: 160px;
+
+  @include sp($break1) {
+    margin-bottom: 120px;
+  }
+
+  @include sp($break2) {
+    margin-bottom: 100px;
+  }
+}
+
+
+
+/* ----- padding-top/bottom ----- */
+
+@mixin pt-sec {
+  padding-top: 160px;
+
+  @include sp($break1) {
+    padding-top: 120px;
+  }
+
+  @include sp($break2) {
+    padding-top: 100px;
+  }
+}
+
+@mixin pt-msg {
+  padding-top: 50px;
+
+  @include sp($break1) {
+    padding-top: 40px;
+  }
+
+  @include sp($break2) {
+    padding-top: 30px;
+  }
+}
+
+
+
+@mixin pb-sec {
+  padding-bottom: 160px;
+
+  @include sp($break1) {
+    padding-bottom: 120px;
+  }
+
+  @include sp($article_break) {
+    padding-bottom: 100px;
+  }
+}
+
+@mixin pb-contents {
+  padding-bottom: 80px;
+
+  @include sp($break1) {
+    padding-bottom: 60px;
+  }
+
+  @include sp($break2) {
+    padding-bottom: 50px;
+  }
+}
+
+@mixin pb-msg {
+  padding-bottom: 50px;
+
+  @include sp($break1) {
+    padding-bottom: 40px;
+  }
+
+  @include sp($break2) {
+    padding-bottom: 30px;
+  }
+}
+
+
+
+/* ----- font-size ----- */
+
+@mixin fz-10 {
+  font-size: 10px;
+  @include sp($break2) { font-size: 8px; }
+}
+@mixin fz-12 {
+  font-size: 12px;
+  @include sp($break2) { font-size: 10px; }
+}
+@mixin fz-14 {
+  font-size: 14px;
+  @include sp($break2) { font-size: 12px; }
+}
+@mixin fz-16 {
+  font-size: 16px;
+  @include sp($break2) { font-size: 14px; }
+}
+@mixin fz-18 {
+  font-size: 18px;
+  @include sp($break2) { font-size: 16px; }
+}
+@mixin fz-20 {
+  font-size: 20px;
+  @include sp($break2) { font-size: 18px; }
+}
+@mixin fz-24 {
+  font-size: 24px;
+  @include sp($break2) { font-size: 20px; }
+}
+@mixin fz-30 {
+  font-size: 30px;
+  @include sp($break2) { font-size: 24px; }
+}
+@mixin fz-40 {
+  font-size: 40px;
+  @include sp($break2) { font-size: 30px; }
+}
+@mixin fz-50 {
+  font-size: 50px;
+  @include sp($break2) { font-size: 35px; }
+}
+@mixin fz-60 {
+  font-size: 60px;
+  @include sp($break2) { font-size: 45px; }
+}
+@mixin fz-160 {
+  font-size: 160px;
+  @include sp($break2) { font-size: 120px; }
+}
+
+@mixin fz-deco {
+  font-size: 340px;
+
+  @include sp($break1) {
+    font-size: 300px;
+  }
+
+  @include sp($article_break) {
+    font-size: 250px;
+  }
+}
+
+
+/* ----- line-height, letter-spacing ----- */
+
+@mixin tracking($tracking) {
+  letter-spacing: ($tracking / 1000) + em;
+}
+
+@mixin lineheight($fontsize, $line) {
+  line-height: $line / $fontsize;
+}
+
+
+
+/* ----- box-shadow, border-radius ----- */
+
+@mixin black-shadow {
+  box-shadow: 0 0 30px 0 rgba(64, 80, 92, .05);
+}
+
+.js-x-scroll {
+  cursor: grab;
+}

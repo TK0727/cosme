@@ -1,0 +1,32 @@
+@mixin hover {
+  @media(hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media(hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin supports($property, $value) {
+  $style : "#{$property} : #{$value}";
+  $style : "(#{$style})";
+
+  @supports (#{$style}) {
+    #{$property} : #{$value};
+    @content;
+  }
+}
+
+@mixin unsupports($property, $value) {
+  $style : "#{$property} : #{$value}";
+  $style : "(#{$style})";
+
+  @supports not (#{$style}) {
+    @content;
+  }
+}

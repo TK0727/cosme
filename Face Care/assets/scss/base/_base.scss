@@ -1,0 +1,63 @@
+a,
+button,
+span {
+  transition: all .4s ease;
+
+  &:before,
+  &:after {
+    transition: all .4s ease;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+  transition: all .4s ease;
+}
+
+svg {
+  transition: all .4s ease;
+
+  path {
+    transition: all .4s ease;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  word-wrap: break-word;
+}
+
+body {
+  @include tracking(100);
+  position: relative;
+  color: $black;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+p {
+  line-height: 2;
+}
+
+br {
+  &.pc-br {
+    @include sp($article_break) {
+      display: none;
+    }
+  }
+  &.sp-br {
+    @include pc($article_break) {
+      display: none;
+    }
+  }
+}
